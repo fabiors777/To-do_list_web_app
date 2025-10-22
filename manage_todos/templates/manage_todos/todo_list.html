@@ -9,7 +9,7 @@ Lista de Tarefas
     <h1>Lista de Tarefas</h1>
 
     {% if todo_list %}
-        <table class="table">
+        <table class="table table-dark table-striped table-hover align-middle rounded-3 overflow-hidden shadow-sm">
             <thead>
                 <tr>
                 <th scope="col">Id</th>
@@ -17,6 +17,7 @@ Lista de Tarefas
                 <th scope="col">Criado em</th>
                 <th scope="col">Data de entrega</th>
                 <th scope="col">Finalizado em</th>
+                <th scope="col">Operações</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,12 +31,12 @@ Lista de Tarefas
                         <td>
                             <a
                                 href="{% url 'todo_complete' pk=todo.pk %}"
-                                class="btn btn-primary btn-sm {% if todo.finished_at%}disabled{% endif %}"                                
+                                class="btn btn-success btn-sm {% if todo.finished_at%}disabled{% endif %}"                                
                             >
                                 Concluir
                             </a>
                             <a href="{% url 'todo_update' pk=todo.pk %}"
-                                class="btn btn-secundary btn-sm {% if todo.finished_at%}disabled{% endif %}"
+                                class="btn btn-light btn-sm {% if todo.finished_at%}disabled{% endif %}"
                             >
                                 Editar
                             </a>
