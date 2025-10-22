@@ -10,7 +10,7 @@ A clean, class-based Django app to manage tasks with a simple business rule:
 ![Task List](img/adicionar_tarefa.png)
 
 ### ➕ New Task Form
-![New Task](img/lista_de_tarefa.png)
+![New Task](img/lista_de_tarefas.png)
 
 ---
 
