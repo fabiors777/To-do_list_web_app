@@ -2,9 +2,15 @@
 
 A clean, class-based Django app to manage tasks with a simple business rule:  
 **tasks are ordered by deadline; once a task is completed, the Edit and Complete actions are disabled (only Delete remains available).**
+---
 
-![App Screenshot – List View](docs/screenshot-list.png)
-![App Screenshot – Form View](docs/screenshot-form.png)
+## 🖼️ Screenshots
+
+### 📋 Task List Page
+![Task List](img/adicionar_tarefa.png)
+
+### ➕ New Task Form
+![New Task](img/lista_de_tarefa.png)
 
 ---
 
@@ -39,8 +45,11 @@ cd <your-project-folder>
 # (optional) create a virtual env
 python -m venv .venv
 # Windows:
-.venv\Scripts\activate
+.\.venv\Scripts\activate
 # macOS/Linux:
 source .venv/bin/activate
 
 pip install -r requirements.txt
+
+python manage.py runserver
+
